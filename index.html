@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0f7b6c">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>কাউন্টার</title>
+<style>body{font-family:sans-serif;text-align:center;padding:40px}#n{font-size:80px}button{font-size:24px;padding:14px 30px;border-radius:14px;border:0;background:#0f7b6c;color:#fff}</style>
+</head>
+<body>
+<h2>আমার কাউন্টার</h2>
+<div id="n">0</div>
+<button onclick="n.textContent=++c">+১</button>
+<script>var c=0;</script>
+
+<script>if("serviceWorker" in navigator){window.addEventListener("load",function(){navigator.serviceWorker.register("service-worker.js")})}</script>
+</body>
+</html>
